@@ -1,0 +1,12 @@
+﻿h1 {
+color : pink;
+text - align: center;
+}
+.businesscard {
+border: solid black;
+}
+
+p {
+color: blue;
+text-align:center;
+}
