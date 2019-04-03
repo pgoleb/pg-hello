@@ -27,4 +27,3 @@ function personal_info() {
 	navigator.notification.alert(i);
 }
 		
-}
