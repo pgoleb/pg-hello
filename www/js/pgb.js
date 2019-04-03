@@ -21,9 +21,9 @@ function deviceInfo() {
 	
 }
 function personal_info() {
-	info = 'Name: Paloma' + '\n' + '=====' + '\n' + '
+	i = 'Name: Paloma' + '\n' + '=====' + '\n' + '
 	       'Surname : Gołębiowska' + '\n' + 
 		   'Age : 25' + '\n';
-	navigator.notification.alert(info) ;
+	navigator.notification.alert(i) ;
 		
 }
