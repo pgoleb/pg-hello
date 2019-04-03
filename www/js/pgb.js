@@ -25,5 +25,6 @@ function personal_info() {
 	       'Surname : Gołębiowska' + '\n' + 
 		   'Age : 25' + '\n';
 	navigator.notification.alert(i);
+}
 		
 }
