@@ -28,7 +28,7 @@ function personal_info() {
 }
 
 function network() {
-    var networkState = navigator.connection.type;
+		var networkState = navigator.connection.type;
  
     var states = {};
     states[Connection.UNKNOWN]  = 'Unknown connection';
@@ -40,5 +40,5 @@ function network() {
     states[Connection.CELL]     = 'Cell generic connection';
     states[Connection.NONE]     = 'No network connection';
  
-    navigator.notification.alert('Connection type: ' + states[networkState]);
+	navigator.notification.alert('Connection type: ' + states[networkState]);
 }
