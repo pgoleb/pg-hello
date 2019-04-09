@@ -10,9 +10,7 @@
 		Paloma Gołębiowska
 	</author>
 
-    <prefernce name="SplashScreen" value="screen"/>
-    <preference name = "SplashScreenDelay" value = "3000" />
-    <preference name = "SplashMaintainAspectRatio" value = "false" />
+    
 
 	<platform name="android"> 
 		<icon src="www/img/android.png" density="mdpi" />
@@ -34,6 +32,9 @@
         
 	</platform>
 	
+    <prefernce name="SplashScreen" value="screen"/>
+    <preference name = "SplashScreenDelay" value = "10000" />
+    <preference name = "SplashMaintainAspectRatio" value = "true" />
    
    
     
