@@ -10,9 +10,7 @@
 		Paloma Gołębiowska
 	</author>
 
-    <prefernce name="SplashScreen" value="screen"/>
-    <preference name = "SplashScreenDelay" value = "10000" />
-    <preference name = "SplashMaintainAspectRatio" value = "true" />
+   
    
 
 	<platform name="android"> 
@@ -22,20 +20,23 @@
 		<icon src="www/img/android.png" density="xhdpi" />
 		<icon src="www/img/android.png" density="xxhdpi" />
 
-		<splash src="www/img/splash.png" density="land-hdpi"/>
 		<splash src="www/img/splash.png" density="land-ldpi"/>
 		<splash src="www/img/splash.png" density="land-mdpi"/>
-		<splash src="www/img/splash.png" density="land-xhdpi"/>
+        <splash src="www/img/splash.png" density="land-hdpi"/>
+        <splash src="www/img/splash.png" density="land-xhdpi"/>
 
-		<splash src="www/img/splash.png" density="port-hdpi"/>
 		<splash src="www/img/splash.png" density="port-ldpi"/>
-		<splash src="www/img/splash.png" density="port-mdpi"/>
-		<splash src="www/img/splash.png" density="port-xhdpi"/> 
+        <splash src="www/img/splash.png" density="port-mdpi"/>
+        <splash src="www/img/splash.png" density="port-hdpi"/>
+        <splash src="www/img/splash.png" density="port-xhdpi"/> 
         
         
 	</platform>
+    <splash src="splash.png" />
 	
-    
+    <prefernce name="SplashScreen" value="screen"/>
+    <preference name = "SplashScreenDelay" value = "10000" />
+    <preference name = "SplashMaintainAspectRatio" value = "true" />
    
     
 	
