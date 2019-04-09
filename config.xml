@@ -9,6 +9,9 @@
     <author href="https://github.com/pgoleb/pg-hello.git" email="paloma.golebiowska@gmail.com">
 		Paloma Gołębiowska
 	</author>
+
+    <prefernce name="SplashScreen" value="screen"/>
+    
 	<platform name="android"> 
 		<icon src="www/img/android.png" density="mdpi" />
 		<icon src="www/img/android.png" density="ldpi" />
@@ -27,7 +30,7 @@
 		<splash src="www/img/splash.jpg" density="port-xhdpi"/>
 	</platform>
 	
-    <prefernce name="SplashScreen" value="screen"/>
+   
     
 	
     <plugin name="cordova-plugin-device" spec="2.0.1" />
