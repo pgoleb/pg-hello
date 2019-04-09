@@ -11,7 +11,9 @@
 	</author>
 
     <prefernce name="SplashScreen" value="screen"/>
-    
+    <preference name = "SplashScreenDelay" value = "3000" />
+    <preference name = "SplashMaintainAspectRatio" value = "false" />
+
 	<platform name="android"> 
 		<icon src="www/img/android.png" density="mdpi" />
 		<icon src="www/img/android.png" density="ldpi" />
@@ -27,9 +29,12 @@
 		<splash src="www/img/splash.jpg" density="port-hdpi"/>
 		<splash src="www/img/splash.jpg" density="port-ldpi"/>
 		<splash src="www/img/splash.jpg" density="port-mdpi"/>
-		<splash src="www/img/splash.jpg" density="port-xhdpi"/>
+		<splash src="www/img/splash.jpg" density="port-xhdpi"/> 
+        
+        
 	</platform>
 	
+   
    
     
 	
