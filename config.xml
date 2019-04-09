@@ -44,5 +44,5 @@
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
     <plugin name="cordova-plugin-network-information" spec="2.0.1" />
     <plugin name="cordova-plugin-device-motion" spec="2.0.1" />
-    <plugin name="cordova-plugin-splashscreen" source="npm" />
+    <plugin name="cordova-plugin-splashscreen" source = "npm" spec="2.0.1" />
 </widget>
