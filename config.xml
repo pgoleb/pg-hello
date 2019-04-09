@@ -10,7 +10,10 @@
 		Paloma Gołębiowska
 	</author>
 
-    
+    <prefernce name="SplashScreen" value="screen"/>
+    <preference name = "SplashScreenDelay" value = "10000" />
+    <preference name = "SplashMaintainAspectRatio" value = "true" />
+   
 
 	<platform name="android"> 
 		<icon src="www/img/android.png" density="mdpi" />
@@ -32,10 +35,7 @@
         
 	</platform>
 	
-    <prefernce name="SplashScreen" value="screen"/>
-    <preference name = "SplashScreenDelay" value = "10000" />
-    <preference name = "SplashMaintainAspectRatio" value = "true" />
-   
+    
    
     
 	
@@ -43,5 +43,5 @@
 	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
     <plugin name="cordova-plugin-network-information" spec="2.0.1" />
     <plugin name="cordova-plugin-device-motion" spec="2.0.1" />
-    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
 </widget>
