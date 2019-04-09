@@ -43,28 +43,31 @@ function network() {
 	navigator.notification.alert('Connection type: ' + states[networkState]);
 }
 
-function onDeviceReady() {
-	navigator.notification.beep(1);
-	console.log(navigator.accelerometer);
-	navigator.splashscreen.show();
-}
-
-var watchID = navigator.accelerometer.watchAcceleration(accelerometerSuccess,
-	accelerometerError,
-	accelerometerOptions);
-
 function onSuccess(acceleration) {
-    navigator.notification.alert('Acceleration X: ' + acceleration.x + '\n' +
-          'Acceleration Y: ' + acceleration.y + '\n' +
-          'Acceleration Z: ' + acceleration.z + '\n' +
-          'Timestamp: '      + acceleration.timestamp + '\n');
+		alert('Acceleration X: ' + acceleration.x + '\n' +
+          		'Acceleration Y: ' + acceleration.y + '\n' +
+          		'Acceleration Z: ' + acceleration.z + '\n' +
+          		'Timestamp: '      + acceleration.timestamp + '\n');
 }
+
 
 function onError() {
-    navigation.notification.alert('onError!');
+    	alert('onError!');
 }
 
-var options = { frequency: 3000};
+var options = {
+		frequency: 3000
+};
 
-var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+function motionInfo(){
+		var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+		if (watchID) {
+				setTimeout(function () {
+					navigator.accelerometer.clearWatch(watchID);
+					watchID = null;
+				}, 7000);
+		}
+}
+	
+	
 
