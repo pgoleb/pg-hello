@@ -42,3 +42,28 @@ function network() {
  
 	navigator.notification.alert('Connection type: ' + states[networkState]);
 }
+
+function onDeviceReady() {
+	navigator.notification.beep(1);
+	console.log(navigator.accelerometer);
+}
+
+var watchID = navigator.accelerometer.watchAcceleration(accelerometerSuccess,
+	accelerometerError,
+	accelerometerOptions);
+
+function onSuccess(acceleration) {
+    navigator.notification.alert('Acceleration X: ' + acceleration.x + '\n' +
+          'Acceleration Y: ' + acceleration.y + '\n' +
+          'Acceleration Z: ' + acceleration.z + '\n' +
+          'Timestamp: '      + acceleration.timestamp + '\n');
+}
+
+function onError() {
+    navigation.notification.alert('onError!');
+}
+
+var options = { frequency: 3000};
+
+var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
+
